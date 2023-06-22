@@ -1,0 +1,80 @@
+body {
+	background-color: rgb(48, 48, 48);
+}
+
+// .container {}
+
+input,
+button {
+	padding-left: 10px;
+	width: 240px;
+	height: 40px;
+	border: 1px solid black;
+	background-color: rgb(101, 101, 101);
+	border-radius: 10px;
+	font-size: 22px;
+}
+
+::-webkit-calendar-picker-indicator {
+	cursor: pointer;
+	margin: 10px;
+}
+
+input:focus {
+	border: 2px solid #ffffff;
+}
+
+.toDoList {
+	display: flex;
+	column-gap: 60px;
+	padding: 40px 60px 40px 40px;
+}
+
+.addTask {
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+}
+
+.tasks {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 100%;
+	min-height: 88vh;
+}
+
+.task {
+	border: 1px solid black;
+	min-height: 40px;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px 10px 4px 10px;
+	background-color: rgb(101, 101, 101);
+
+	p:first-child {
+		font-size: 28px;
+	}
+
+	p:last-child {
+		font-size: 18px;
+	}
+
+	img {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.taskNav {
+	display: flex;
+}
+
+.line {
+	p:first-child {
+		text-decoration: line-through;
+		text-decoration-color: rgb(0, 0, 0);
+	}
+}
